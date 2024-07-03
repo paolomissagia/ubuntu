@@ -1,3 +1,4 @@
-mise use --global ruby@3.3
-mise use --global node@lts
-mise use --global python@latest
+mise use -g ruby@3.3
+mise use -g node@lts
+mise use -g python@latest
+mise use -g go
