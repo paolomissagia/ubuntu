@@ -1,10 +1,10 @@
-# extensions
+# disable default extensions
 gnome-extensions disable tiling-assistant@ubuntu.com
 gnome-extensions disable ubuntu-appindicators@ubuntu.com
 gnome-extensions disable ubuntu-dock@ubuntu.com
 gnome-extensions disable ding@rastersoft.com
 
-# shortcuts
+# basic shortcuts
 gsettings set org.gnome.desktop.wm.keybindings close "['<Ctrl>q']"
 gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
