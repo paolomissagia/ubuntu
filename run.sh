@@ -6,5 +6,4 @@ sudo apt install -y \
 	 libncurses5-dev libffi-dev libgdbm-dev
 
 for script in ~/code/ubuntu/install/*.sh; do source $script; done
-for script in ~/code/ubuntu/config/*.sh; do source $script; done
 for script in ~/code/ubuntu/utils/*.sh; do source $script; done
