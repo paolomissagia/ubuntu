@@ -5,6 +5,5 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsM
 unzip JetBrainsMono.zip -d JetBrainsMono
 cp JetBrainsMono/*.ttf ~/.local/share/fonts
 rm -rf JetBrainsMono.zip JetBrainsMono 
-
 fc-cache -f -v
 cd -
