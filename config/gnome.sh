@@ -4,6 +4,9 @@ gnome-extensions disable ubuntu-appindicators@ubuntu.com
 gnome-extensions disable ubuntu-dock@ubuntu.com
 gnome-extensions disable ding@rastersoft.com
 
+# remove terminal icon
+sudo rm -rf /usr/share/applications/org.gnome.Terminal.desktop
+
 # fractional scaling
 gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer", "xwayland-native-scaling"]'
 
@@ -15,6 +18,7 @@ gsettings set org.gnome.desktop.wm.keybindings close "['<Ctrl>q']"
 gsettings set org.gnome.mutter overlay-key 'Super_R'
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
+gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 
 # workspaces
 gsettings set org.gnome.mutter dynamic-workspaces false
@@ -36,3 +40,10 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
 
 # disable auto brightness
 gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+
+# ulauncher
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
+gsettings set org.gnome.desktop.wm.keybindings switch-input-source "@as []"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'ulauncher-toggle'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'ulauncher-toggle'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Super>space'
