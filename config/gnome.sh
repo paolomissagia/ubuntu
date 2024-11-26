@@ -4,6 +4,9 @@ gnome-extensions disable ubuntu-appindicators@ubuntu.com
 gnome-extensions disable ubuntu-dock@ubuntu.com
 gnome-extensions disable ding@rastersoft.com
 
+# fractional scaling
+gsettings set org.gnome.mutter experimental-features '["scale-monitor-framebuffer", "xwayland-native-scaling"]'
+
 # show battery level
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 
