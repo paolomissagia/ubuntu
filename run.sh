@@ -8,7 +8,9 @@ sudo apt install -y \
 
 sudo install -m 0755 -d /etc/apt/keyrings
 
-for install in ~/code/ubuntu/installs/**/*.sh; do source $install; done
+for install in ~/code/ubuntu/installs/*.sh; do source $install; done
+
+for install in ~/code/ubuntu/installs/desktop/*.sh; do source $install; done
 
 for config in ~/code/ubuntu/config/*.sh; do source $config; done
 
