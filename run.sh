@@ -1,6 +1,6 @@
 sudo apt update -y && sudo apt upgrade -y && sudo snap refresh
 
-sudo apt install -y git curl ca-certificates stow gpg ripgrep
+sudo apt install -y git curl ca-certificates stow gpg ripgrep zip procps
 
 sudo apt install -y \
     autoconf patch build-essential rustc libssl-dev libyaml-dev libreadline6-dev \
