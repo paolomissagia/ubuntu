@@ -1,6 +1,6 @@
 cat <<EOF >~/.local/share/applications/logout.desktop
 [Desktop Entry]
-Name=Log Out
+Name=Lock
 Exec=gnome-session-quit --logout --no-prompt
 Icon=system-log-out
 Terminal=false
