@@ -31,3 +31,7 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
 
 # compose key
 gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
+
+# fix alt tab
+gsettings set org.gnome.desktop.wm.keybindings switch-windows "[]"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Alt>Tab']"
