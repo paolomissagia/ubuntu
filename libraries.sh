@@ -1,3 +1,6 @@
+# system up
+sudo apt update && sudo apt upgrade && sudo snap refresh
+
 # ppa
 sudo add-apt-repository universe -y
 
