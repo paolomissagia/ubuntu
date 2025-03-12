@@ -8,4 +8,4 @@ sudo add-apt-repository universe -y
 sudo install -dm 755 /etc/apt/keyrings
 
 # dependencies
-sudo apt install -y curl unzip build-essential ripgrep
+sudo apt install -y curl unzip build-essential ripgrep fd-find
