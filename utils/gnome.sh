@@ -17,14 +17,13 @@ gsettings set org.gnome.desktop.wm.keybindings maximize "['<Super>Up']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 "['<Super>1']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 "['<Super>2']"
 
+# disable auto brightness
+gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled false
+
 # workspaces
 gsettings set org.gnome.mutter dynamic-workspaces false
 gsettings set org.gnome.desktop.wm.preferences num-workspaces 2
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
-
-# multitasking
-gsettings set org.gnome.desktop.interface enable-hot-corners false
-gsettings set org.gnome.mutter edge-tiling false
 
 # dark mode
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
@@ -37,10 +36,6 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
 
 # compose key
 gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
-
-# fix alt tab
-gsettings set org.gnome.desktop.wm.keybindings switch-windows "[]"
-gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Alt>Tab']"
 
 # disable sounds
 gsettings set org.gnome.desktop.sound event-sounds false
