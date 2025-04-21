@@ -39,3 +39,6 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
 
 # disable sounds
 gsettings set org.gnome.desktop.sound event-sounds false
+
+# disable animations
+gsettings set org.gnome.desktop.interface enable-animations false
