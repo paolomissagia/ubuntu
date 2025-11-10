@@ -1,4 +1,4 @@
-ssh-keygen -t ed25519 -C "login@paolomissagia.com"
+ssh-keygen -t ed25519 -C "hello@paolomissagia.com"
 
 eval "$(ssh-agent -s)"
 
