@@ -11,10 +11,7 @@ sudo install -m 0755 -d /etc/apt/keyrings
 sudo apt install -y curl build-essential
 
 # neovim
-sudo apt install -y ripgrep fd-find unzip
+sudo apt install -y ripgrep
 
-# docker
-sudo apt install -y ca-certificates
-
-# nordvpn
-sudo apt install -y apt-transport-https
+# ruby
+sudo apt install -y autoconf libssl-dev libyaml-dev zlib1g-dev libffi-dev libgmp-dev rustc
