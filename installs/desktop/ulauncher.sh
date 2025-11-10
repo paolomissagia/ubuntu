@@ -1,7 +1,5 @@
-cd /tmp
+sudo add-apt-repository ppa:agornostal/ulauncher -y
 
-wget https://github.com/Ulauncher/Ulauncher/releases/download/5.15.7/ulauncher_5.15.7_all.deb
+sudo apt update -y
 
-sudo apt install -y ./ulauncher_5.15.7_all.deb
-
-cd -
+sudo apt install -y ulauncher
