@@ -13,5 +13,5 @@ sudo apt install -y curl build-essential
 # neovim
 sudo apt install -y ripgrep
 
-# ruby
-sudo apt install -y autoconf libssl-dev libyaml-dev zlib1g-dev libffi-dev libgmp-dev rustc
+# anki
+sudo apt install -y libxcb-xinerama0 libxcb-cursor0 libnss3
