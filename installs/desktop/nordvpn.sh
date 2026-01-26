@@ -4,4 +4,4 @@ echo "deb https://repo.nordvpn.com/deb/nordvpn/debian stable main" | sudo tee /e
 
 sudo apt update -y
 
-sudo apt install -y nordvpn
+sudo apt install -y nordvpn-gui
