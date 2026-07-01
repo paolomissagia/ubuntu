@@ -1,3 +1,3 @@
-mise use -g node
+mise use -g node@lts
 
-mise use -g python
+mise use -g python@3
