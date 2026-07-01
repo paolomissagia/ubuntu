@@ -1,10 +1,10 @@
 cd /tmp
 
-wget https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-linux.tar.zst
+wget https://github.com/ankitects/anki/releases/download/26.05/anki-26.05-linux-x86_64.tar.zst
 
-tar xaf anki-launcher-25.09-linux.tar.zst
+tar xaf anki-26.05-linux-x86_64.tar.zst
 
-cd anki-launcher-25.09-linux
+cd anki-linux
 
 sudo ./install.sh
 
