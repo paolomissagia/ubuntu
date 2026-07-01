@@ -1,9 +1,5 @@
-cd /tmp
+sudo add-apt-repository ppa:mkasberg/ghostty-ubuntu -y
 
-wget https://github.com/mkasberg/ghostty-ubuntu/releases/download/1.2.3-0-ppa1/ghostty_1.2.3-0.ppa1_amd64_24.04.deb
+sudo apt update -y
 
-sudo apt install -y ./ghostty_1.2.3-0.ppa1_amd64_24.04.deb
-
-rm ghostty_1.2.3-0.ppa1_amd64_24.04.deb
-
-cd -
+sudo apt install -y ghostty
