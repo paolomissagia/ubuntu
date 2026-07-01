@@ -7,11 +7,11 @@ sudo add-apt-repository universe -y
 # private repos
 sudo install -m 0755 -d /etc/apt/keyrings
 
+# extrepo
+sudo apt install -y extrepo
+
 # dependencies
-sudo apt install -y curl build-essential
+sudo apt install -y curl build-essential util-linux-extra
 
 # neovim
 sudo apt install -y ripgrep
-
-# anki
-sudo apt install -y libxcb-xinerama0 libxcb-cursor0 libnss3
