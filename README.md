@@ -17,13 +17,13 @@ When it finishes, log out and back in so the `docker` group takes effect.
 
 | Step                                                                 | regular | headless |
 | -------------------------------------------------------------------- | :-----: | :------: |
-| `libraries.sh`: system update, base dependencies, extrepo, `/etc/apt/keyrings` | ✓ | ✓ |
+| `libraries.sh`: system update, base dependencies, extrepo | ✓ | ✓ |
 | `installs/terminal/*`: docker, eza, gh, lazygit, mise, neovim, starship, stow, tmux, wl-clipboard | ✓ | ✓ |
-| `utils/docker.sh`, `utils/mise.sh`, `utils/tmux.sh`: docker group, node LTS and python 3, tmux plugins | ✓ | ✓ |
+| `utils/docker.sh`, `utils/mise.sh`, `utils/tmux.sh`: docker group, node LTS, python 3 and ruby 3, tmux plugins | ✓ | ✓ |
 | `installs/desktop/*`: anki, ghostty, gnome extension manager, google chrome, nordvpn, spotify, ulauncher, vlc | ✓ | |
 | `icons/*`: Lock, Restart and Shutdown launchers | ✓ | |
-| `utils/gnome.sh`: GNOME settings and shortcuts | ✓ | |
-| `utils/uninstall.sh`: removes the Firefox snap, `command-not-found` and the Ptyxis launcher | ✓ | |
+| `utils/gnome.sh`: disables Ubuntu's GNOME extensions, settings and shortcuts | ✓ | |
+| `utils/uninstall.sh`: removes the Firefox snap, `command-not-found` and Ptyxis (ghostty is the default terminal) | ✓ | |
 | `utils/ssh-key.sh`: ed25519 key, only if `~/.ssh/id_ed25519` does not exist | ✓ | ✓ |
 
 Each script also runs on its own, e.g. `bash installs/terminal/gh.sh`.
@@ -46,7 +46,7 @@ Do not use extrepo entries that target a specific Debian release (e.g. `docker-c
 
 - `utils/ssh-key.sh` is interactive (passphrase prompt).
 - `utils/gnome.sh` needs a running GNOME session.
-- `stow` is installed, but the dotfiles live in a separate repo.
+- `stow` is used to link the dotfiles from `~/Code/dotfiles`, which is a separate repo.
 
 ## Adding a tool
 

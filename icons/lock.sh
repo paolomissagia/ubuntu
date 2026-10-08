@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cat <<EOF >~/.local/share/applications/lock.desktop
 [Desktop Entry]
 Name=Lock

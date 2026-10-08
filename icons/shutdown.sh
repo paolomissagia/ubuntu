@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cat <<EOF >~/.local/share/applications/shutdown.desktop
 [Desktop Entry]
 Name=Shutdown

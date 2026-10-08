@@ -1,18 +1,20 @@
-# system up
-sudo apt update && sudo apt upgrade -y && sudo snap refresh
+#!/usr/bin/env bash
 
-# ppa
-sudo add-apt-repository universe -y
+sudo apt update
 
-# private repos
-sudo install -m 0755 -d /etc/apt/keyrings
+sudo apt upgrade -y
 
-# extrepo, non-free policy needed for chrome and spotify
+sudo snap refresh
+
+# non-free policy is needed for chrome and spotify
 sudo apt install -y extrepo
+
 grep -qx -- '- non-free' /etc/extrepo/config.yaml || sudo sed -i '/^enabled_policies:/a - non-free' /etc/extrepo/config.yaml
 
-# dependencies
 sudo apt install -y curl build-essential util-linux-extra
 
-# neovim
+# used by neovim
 sudo apt install -y ripgrep
+
+# headers for ruby gems with native extensions
+sudo apt install -y libssl-dev libyaml-dev zlib1g-dev libffi-dev

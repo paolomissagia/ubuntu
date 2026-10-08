@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 ssh-keygen -t ed25519 -C "hello@paolomissagia.com"
 
 # headless machines usually have no agent running

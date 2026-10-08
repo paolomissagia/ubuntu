@@ -1,5 +1,5 @@
-sudo apt remove -y command-not-found
+#!/usr/bin/env bash
+
+sudo apt remove -y command-not-found ptyxis
 
 sudo snap remove --purge firefox
-
-sudo rm /usr/share/applications/org.gnome.Ptyxis.desktop

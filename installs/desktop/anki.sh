@@ -1,13 +1,21 @@
-version=26.05
+#!/usr/bin/env bash
 
-cd /tmp
+version=26.09.3
 
-wget https://github.com/ankitects/anki/releases/download/$version/anki-$version-linux-x86_64.tar.zst
+sudo apt install -y libxcb-xinerama0 libxcb-cursor0 libnss3 libxcb-icccm4 libxcb-keysyms1 zstd
 
-tar xaf anki-$version-linux-x86_64.tar.zst
+dir=$(mktemp -d)
+
+cd "$dir"
+
+wget "https://github.com/ankitects/anki/releases/download/$version/anki-$version-linux-x86_64.tar.zst"
+
+tar xaf "anki-$version-linux-x86_64.tar.zst"
 
 cd anki-linux
 
 sudo ./install.sh
 
 cd -
+
+rm -rf "$dir"

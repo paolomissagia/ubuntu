@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cat <<EOF >~/.local/share/applications/reboot.desktop
 [Desktop Entry]
 Name=Restart

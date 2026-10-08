@@ -1,5 +1,7 @@
-sudo add-apt-repository ppa:agornostal/ulauncher -y
+#!/usr/bin/env bash
 
-sudo apt update -y
+sudo add-apt-repository -y ppa:agornostal/ulauncher
+
+sudo apt update
 
 sudo apt install -y ulauncher
