@@ -30,11 +30,8 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 # night light
 gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
 
-# disable caps lock
-gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none']"
-
-# compose key
-gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
+# disable caps lock, right alt as compose key
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:none', 'compose:ralt']"
 
 # disable sounds
 gsettings set org.gnome.desktop.sound event-sounds false

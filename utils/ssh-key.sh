@@ -1,7 +1,4 @@
 ssh-keygen -t ed25519 -C "hello@paolomissagia.com"
 
-eval "$(ssh-agent -s)"
-
-ssh-add ~/.ssh/id_ed25519
-
-ssh-keygen -t rsa-sha2-256
+# headless machines usually have no agent running
+if [ -n "${SSH_AUTH_SOCK:-}" ]; then ssh-add ~/.ssh/id_ed25519; fi

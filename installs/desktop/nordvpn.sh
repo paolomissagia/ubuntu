@@ -1,6 +1,14 @@
-wget -qO - https://repo.nordvpn.com/gpg/nordvpn_public.asc | sudo tee /etc/apt/trusted.gpg.d/nordvpn_public.asc > /dev/null
+sudo wget -qO /etc/apt/keyrings/nordvpn.asc https://repo.nordvpn.com/gpg/nordvpn_public.asc
 
-echo "deb https://repo.nordvpn.com/deb/nordvpn/debian stable main" | sudo tee /etc/apt/sources.list.d/nordvpn.list
+sudo chmod a+r /etc/apt/keyrings/nordvpn.asc
+
+sudo tee /etc/apt/sources.list.d/nordvpn.sources <<SOURCES
+Types: deb
+URIs: https://repo.nordvpn.com/deb/nordvpn/debian
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/nordvpn.asc
+SOURCES
 
 sudo apt update -y
 
