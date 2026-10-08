@@ -9,9 +9,9 @@ sudo snap refresh
 # non-free policy is needed for chrome and spotify
 sudo apt install -y extrepo
 
-grep -qx -- '- non-free' /etc/extrepo/config.yaml || sudo sed -i '/^enabled_policies:/a - non-free' /etc/extrepo/config.yaml
+sudo sed -i 's/^# - non-free$/- non-free/' /etc/extrepo/config.yaml
 
-sudo apt install -y curl build-essential util-linux-extra
+sudo apt install -y curl build-essential
 
 # used by neovim
 sudo apt install -y ripgrep

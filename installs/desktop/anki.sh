@@ -2,7 +2,7 @@
 
 version=26.09.3
 
-sudo apt install -y libxcb-xinerama0 libxcb-cursor0 libnss3 libxcb-icccm4 libxcb-keysyms1 zstd
+sudo apt install -y libxcb-xinerama0 libxcb-cursor0 libxcb-icccm4 libxcb-keysyms1
 
 dir=$(mktemp -d)
 
